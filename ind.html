@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Kailash Karthikeyan M</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('back2.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: url('back3.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            font-size: 18px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header h1 {
+            margin: 10px 0 5px;
+            font-size: 32px;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        header p {
+            font-size: 18px;
+            font-weight: lighter;
+        }
+
+        /* Profile Photo in Header */
+        .profile-container {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid white;
+            overflow: hidden;
+            order: -1;
+        }
+
+        .profile-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Navigation */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            background-color: rgba(1, 31, 75, 0.9);
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: #12d0ff;
+        }
+
+        /* Sections */
+        section {
+            width: 80%;
+            margin: 40px auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            border-bottom: 3px solid #002b5c;
+            padding-bottom: 8px;
+            color: #002b5c;
+        }
+
+        /* Skills */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 0;
+        }
+
+        .skills-list li {
+            background: #1f1f1f;
+            color: white;
+            padding: 12px 18px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            list-style: none;
+            transition: 0.3s;
+        }
+
+        .skills-list li:hover {
+            background: #00aeff;
+            color: black;
+        }
+
+        /* Projects */
+        .project {
+            border-left: 5px solid #1f1f1f;
+            padding: 15px;
+            margin: 15px 0;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        .project h3 {
+            margin: 0;
+            color: #1f1f1f;
+        }
+
+        /* Contact */
+        #contact p {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        #contact a {
+            display: block;
+            text-align: center;
+            font-size: 18px;
+            color: #1f1f1f;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        #contact a:hover {
+            color: #12d0ff;
+        }
+
+        .resume-download {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .resume-download a {
+            background: #089931;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .resume-download a:hover {
+            background: #1f1f1f;
+            color: black;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: rgba(1, 31, 75, 0.9);
+            color: white;
+            padding: 15px;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile-container">
+            <img src="kai.png" alt="Profile Photo">
+        </div>
+        <div>
+            <h1>Kailash Karthikeyan M</h1>
+            <p>Aspiring Embedded Systems Engineer | Electronics Enthusiast</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+  
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate student specializing in Embedded Systems and Electronics.  
+            With a strong foundation in microcontrollers and real-time systems,  
+            I enjoy designing innovative solutions using Arduino and LTSpice simulations.  
+            I am constantly exploring new technologies to enhance my technical expertise.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <ul class="skills-list">
+            <li>C Programming</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>Arduino IDE</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Speed Detector using Arduino</h3>
+            <p>
+                Developed a real-time speed detection system utilizing sensor modules  
+                and Arduino to measure and display speed readings effectively.
+            </p>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <p>Email: kailashkarthikeyanms@gmail.com</p>
+        <a href="https://github.com/kailashkarthikeyan" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/kailashkarthikeyan" target="_blank">LinkedIn</a>
+        <div class="resume-download">
+            <a href="https://wallpapercave.com/wp/wp7603421.jpg" download>Download Resume</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Kailash Karthikeyan M. All rights reserved.</p>
+    </footer>
+</body>
+</html>
